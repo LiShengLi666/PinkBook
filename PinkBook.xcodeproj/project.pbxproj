@@ -13,6 +13,7 @@
 		1A951E0A2785F1CC00942B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A951E082785F1CC00942B62 /* Main.storyboard */; };
 		1A951E0C2785F1CD00942B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A951E0B2785F1CD00942B62 /* Assets.xcassets */; };
 		1A951E0F2785F1CD00942B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A951E0D2785F1CD00942B62 /* LaunchScreen.storyboard */; };
+		1AC569052789DADC00537124 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1AC569042789DADC00537124 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1A951E0B2785F1CD00942B62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A951E0E2785F1CD00942B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A951E102785F1CD00942B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AC569042789DADC00537124 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		1A951E012785F1CC00942B62 /* PinkBook */ = {
 			isa = PBXGroup;
 			children = (
+				1AC569042789DADC00537124 /* .gitignore */,
 				1A951E022785F1CC00942B62 /* AppDelegate.swift */,
 				1A951E042785F1CC00942B62 /* SceneDelegate.swift */,
 				1A951E062785F1CC00942B62 /* ViewController.swift */,
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AC569052789DADC00537124 /* .gitignore in Resources */,
 				1A951E0F2785F1CD00942B62 /* LaunchScreen.storyboard in Resources */,
 				1A951E0C2785F1CD00942B62 /* Assets.xcassets in Resources */,
 				1A951E0A2785F1CC00942B62 /* Main.storyboard in Resources */,
