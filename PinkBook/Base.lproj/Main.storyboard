@@ -98,7 +98,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" name="main"/>
+                        <color key="selectedImageTintColor" name="themeColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="jtp-5t-qSH" kind="relationship" relationship="viewControllers" id="frw-Rt-8Zf"/>
@@ -119,7 +119,7 @@
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus.rectangle.fill" catalog="system" width="128" height="93"/>
-        <namedColor name="main">
+        <namedColor name="themeColor">
             <color red="0.92900002002716064" green="0.34099999070167542" blue="0.55699998140335083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
