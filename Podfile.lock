@@ -1,0 +1,61 @@
+PODS:
+  - AMapFoundation (1.6.9)
+  - AMapLocation (2.8.0):
+    - AMapFoundation (~> 1.6.9)
+  - AMapSearch (8.1.0):
+    - AMapFoundation (~> 1.6.9)
+  - CHTCollectionViewWaterfallLayout/Swift (0.9.10)
+  - KMPlaceholderTextView (1.4.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.5.0)
+  - PryntTrimmerView (4.0.2)
+  - SKPhotoBrowser (7.0.0)
+  - SteviaLayout (4.7.3)
+  - XLPagerTabStrip (9.0.0)
+  - YPImagePicker (4.5.0):
+    - PryntTrimmerView (~> 4.0.2)
+    - SteviaLayout (~> 4.7.3)
+
+DEPENDENCIES:
+  - AMapLocation
+  - AMapSearch
+  - CHTCollectionViewWaterfallLayout/Swift
+  - KMPlaceholderTextView (~> 1.4.0)
+  - MBProgressHUD (~> 1.2.0)
+  - MJRefresh
+  - SKPhotoBrowser
+  - XLPagerTabStrip (~> 9.0)
+  - YPImagePicker
+
+SPEC REPOS:
+  trunk:
+    - AMapFoundation
+    - AMapLocation
+    - AMapSearch
+    - CHTCollectionViewWaterfallLayout
+    - KMPlaceholderTextView
+    - MBProgressHUD
+    - MJRefresh
+    - PryntTrimmerView
+    - SKPhotoBrowser
+    - SteviaLayout
+    - XLPagerTabStrip
+    - YPImagePicker
+
+SPEC CHECKSUMS:
+  AMapFoundation: 8d8ecbb0b2e9ce5487995360d26c885d94642bfd
+  AMapLocation: 5ef44a1117be7dc541cb7a7d43d03c5ee91e4387
+  AMapSearch: 5c1cc07429f04b9cc76438fcb2411c66fdbbb178
+  CHTCollectionViewWaterfallLayout: b989a459788d7657ac010e03bc0f7eedca95a420
+  KMPlaceholderTextView: 2206c3df39979e9396e2d96fa9f427a8951121b0
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  SKPhotoBrowser: 6aaa8f232752e87c7e76bace183bead0a137097d
+  SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+  YPImagePicker: 6f410f475bd22fa8cd430495b54d4b2f15865c2d
+
+PODFILE CHECKSUM: e1c3add2e69432b07241ba5beb68880e697d909d
+
+COCOAPODS: 1.11.2
