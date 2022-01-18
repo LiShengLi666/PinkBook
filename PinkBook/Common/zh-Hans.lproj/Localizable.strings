@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  PinkBook
+  本地化文件
+ 注意:
+ 1.找到String文件, 命名一定是Localizable
+ 2.找到右边的Localization, 勾上中英文
+ 3.在需要显示字符串的地方写 NSLocalizedString("Discovery", comment: "首页发现标签")   comment是给翻译人员看的
+ 4.在Localizable.strings写上对应的文字
+ 5.模拟器测试
+ 
+  Created by 李胜 on 2022/1/18.
+  
+*/
+
+"Discovery" = "发现";
