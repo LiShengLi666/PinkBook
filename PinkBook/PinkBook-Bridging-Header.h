@@ -4,3 +4,4 @@
 
 #import <XLPagerTabStrip/XLPagerTabStrip-Swift.h>
 #import <CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout-Swift.h>
+#import <YPImagePicker/YPImagePicker-Swift.h>

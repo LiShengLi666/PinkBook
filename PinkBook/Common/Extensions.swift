@@ -73,6 +73,7 @@ extension UIView {
 
 extension Bundle {
     var appName: String {
+        /// 如果本地化的plist文件没有配置,就取默认的项目名
         if let appName = localizedInfoDictionary?["CFBundleDisplayName"] as? String {
             return appName
         } else {

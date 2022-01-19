@@ -23,6 +23,8 @@
 		1A951E0F2785F1CD00942B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A951E0D2785F1CD00942B62 /* LaunchScreen.storyboard */; };
 		1AA763732796F81300D44521 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AA763752796F81300D44521 /* Localizable.strings */; };
 		1AA763792796FD7C00D44521 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AA7637B2796FD7C00D44521 /* InfoPlist.strings */; };
+		1AA7637D279704D500D44521 /* TabBarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA7637C279704D500D44521 /* TabBarC.swift */; };
+		1AA7637F279705D400D44521 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA7637E279705D400D44521 /* PostVC.swift */; };
 		1AC569052789DADC00537124 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1AC569042789DADC00537124 /* .gitignore */; };
 		CC02D7307966D99AB4DDEF07 /* Pods_PinkBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AA27CE04EA7CDCF0CE77BD /* Pods_PinkBook.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +52,8 @@
 		1AA763702796F41800D44521 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		1AA763742796F81300D44521 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1AA7637A2796FD7C00D44521 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		1AA7637C279704D500D44521 /* TabBarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarC.swift; sourceTree = "<group>"; };
+		1AA7637E279705D400D44521 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		1AC569042789DADC00537124 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		66E68EC0A7E8A4F3237DEEB6 /* Pods-PinkBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkBook.debug.xcconfig"; path = "Target Support Files/Pods-PinkBook/Pods-PinkBook.debug.xcconfig"; sourceTree = "<group>"; };
 		831D97027B7375B8C479D496 /* Pods-PinkBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinkBook.release.xcconfig"; path = "Target Support Files/Pods-PinkBook/Pods-PinkBook.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 				1AC569042789DADC00537124 /* .gitignore */,
 				1A951E022785F1CC00942B62 /* AppDelegate.swift */,
 				1A951E042785F1CC00942B62 /* SceneDelegate.swift */,
+				1AA7637E279705D400D44521 /* PostVC.swift */,
+				1AA7637C279704D500D44521 /* TabBarC.swift */,
 				1A60D84E2796722A00ADFAD9 /* Common */,
 				1A60D849279671EB00ADFAD9 /* Waterfall */,
 				1A0C18FD2794565800728CA3 /* Home */,
@@ -272,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA7637F279705D400D44521 /* PostVC.swift in Sources */,
 				1A0C18FC279450D500728CA3 /* HomeVC.swift in Sources */,
 				1A0C18F6279442C300728CA3 /* NearByVC.swift in Sources */,
 				1A0C18F4279442B500728CA3 /* DiscoveryVC.swift in Sources */,
@@ -279,6 +286,7 @@
 				1A60D84D279671EB00ADFAD9 /* WaterfallVC.swift in Sources */,
 				1A60D84C279671EB00ADFAD9 /* WaterfallCell.swift in Sources */,
 				1A951E032785F1CC00942B62 /* AppDelegate.swift in Sources */,
+				1AA7637D279704D500D44521 /* TabBarC.swift in Sources */,
 				1A0C18FA279442E700728CA3 /* Constants.swift in Sources */,
 				1A951E052785F1CC00942B62 /* SceneDelegate.swift in Sources */,
 				1A60D8512796723C00ADFAD9 /* Extensions.swift in Sources */,

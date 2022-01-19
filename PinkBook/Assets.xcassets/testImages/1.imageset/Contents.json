@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "launchScreenImage@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
@@ -19,7 +19,7 @@
       "scale" : "1x"
     },
     {
-      "filename" : "launchScreenImage@2x.png",
+      "filename" : "1.png",
       "idiom" : "universal",
       "locale" : "zh-Hans",
       "scale" : "2x"
