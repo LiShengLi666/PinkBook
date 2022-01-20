@@ -1,6 +1,6 @@
 //
 //  NoteEditVC.swift
-//  PinkBook
+//  编辑笔记页面
 //
 //  Created by 李胜 on 2022/1/20.
 //
@@ -56,7 +56,7 @@ class NoteEditVC: UIViewController {
 
             present(picker, animated: true)
         } else {
-//            showTextHUD("最多只能选择\(kMaxPhotoCount)张照片哦")
+            showTextHUD("最多只能选择\(kMaxPhotoCount)张照片哦")
         }
     }
 }

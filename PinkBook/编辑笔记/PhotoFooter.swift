@@ -1,6 +1,6 @@
 //
 //  PhotoFooter.swift
-//  PinkBook
+//  添加cell
 //
 //  Created by 李胜 on 2022/1/20.
 //
