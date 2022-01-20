@@ -9,7 +9,7 @@ import UIKit
 
 extension String {
     var isBlank: Bool {
-        self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
 }
 
@@ -33,43 +33,46 @@ extension UIView {
     }
 }
 
-// extension UIViewController{
-//
-//    // MARK: - 展示加载框或提示框
-//
-//    // MARK: 加载框--手动隐藏
-//    func showLoadHUD(_ title: String? = nil){
-//        let hud = MBProgressHUD.showAdded(to: view, animated: true)
-//        hud.label.text = title
-//    }
-//    func hideLoadHUD(){
-//        DispatchQueue.main.async {
-//            MBProgressHUD.hide(for: self.view, animated: true)
-//        }
-//    }
-//
-//
-//    // MARK: 提示框--自动隐藏
-//    func showTextHUD(_ title: String, _ subTitle: String? = nil){
-//        let hud = MBProgressHUD.showAdded(to: view, animated: true)
-//        hud.mode = .text //不指定的话显示菊花和下面配置的文本
-//        hud.label.text = title
-//        hud.detailsLabel.text = subTitle
-//        hud.hide(animated: true, afterDelay: 2)
-//    }
-//
-//    // MARK: 点击空白处收起键盘
-//    func hideKeyboardWhenTappedAround(){
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-//        //保证tap手势不会影响到其他touch类控件的手势
-//        //若不设，则本页面有tableview时，点击cell不会触发didSelectRowAtIndex（除非长按）
-//        tap.cancelsTouchesInView = false
-//        view.addGestureRecognizer(tap)
-//    }
-//    @objc func dismissKeyboard(){
-//        view.endEditing(true) //让view中的所有textfield失去焦点--即关闭小键盘
-//    }
-// }
+extension UIViewController {
+    // MARK: - 展示加载框或提示框
+
+    // MARK: 加载框--手动隐藏
+
+    func showLoadHUD(_ title: String? = nil) {
+        let hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud.label.text = title
+    }
+
+    func hideLoadHUD() {
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+        }
+    }
+
+    // MARK: 提示框--自动隐藏
+
+    func showTextHUD(_ title: String, _ subTitle: String? = nil) {
+        let hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud.mode = .text // 不指定的话显示菊花和下面配置的文本
+        hud.label.text = title
+        hud.detailsLabel.text = subTitle
+        hud.hide(animated: true, afterDelay: 2)
+    }
+
+    // MARK: 点击空白处收起键盘
+
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        // 保证tap手势不会影响到其他touch类控件的手势
+        // 若不设，则本页面有tableview时，点击cell不会触发didSelectRowAtIndex（除非长按）
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true) // 让view中的所有textfield失去焦点--即关闭小键盘
+    }
+}
 
 extension Bundle {
     var appName: String {

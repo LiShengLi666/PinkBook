@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YbD-Zs-Jfa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="suT-Yn-QpU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -25,7 +25,130 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1659" y="804"/>
+            <point key="canvasLocation" x="906" y="931"/>
+        </scene>
+        <!--Note EditVC-->
+        <scene sceneID="SPc-Ua-cV4">
+            <objects>
+                <viewController storyboardIdentifier="NoteEditVCID" id="suT-Yn-QpU" customClass="NoteEditVC" customModule="PinkBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gqR-0Y-F6m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwf-tc-hna">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gEt-Bs-JEU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Eva-nK-Z6E">
+                                                <rect key="frame" x="16" y="16" width="382" height="90"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="90" id="fDg-7J-oft"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0ZR-Kd-g4W">
+                                                    <size key="itemSize" width="90" height="90"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="90" height="90"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCellID" id="JjW-1N-6Db" customClass="PhotoCell" customModule="PinkBook" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="92A-GN-dON">
+                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="chw-hm-Odf">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                            <integer key="value" value="8"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="chw-hm-Odf" firstAttribute="leading" secondItem="92A-GN-dON" secondAttribute="leading" id="2hs-JP-WRP"/>
+                                                                <constraint firstAttribute="bottom" secondItem="chw-hm-Odf" secondAttribute="bottom" id="87v-pr-CoP"/>
+                                                                <constraint firstItem="chw-hm-Odf" firstAttribute="top" secondItem="92A-GN-dON" secondAttribute="top" id="kYM-Wh-oDE"/>
+                                                                <constraint firstAttribute="trailing" secondItem="chw-hm-Odf" secondAttribute="trailing" id="rl1-Ni-oPw"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="imageView" destination="chw-hm-Odf" id="2bS-7l-HgE"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="PhotoFooterID" id="qfS-sh-Tnk" customClass="PhotoFooter" customModule="PinkBook" customModuleProvider="target">
+                                                    <rect key="frame" x="98" y="0.0" width="90" height="90"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ku-SN-CtU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="＋"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                                    <real key="value" value="8"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="3Ku-SN-CtU" secondAttribute="bottom" id="CsC-6y-klA"/>
+                                                        <constraint firstItem="3Ku-SN-CtU" firstAttribute="top" secondItem="qfS-sh-Tnk" secondAttribute="top" id="Eoo-KD-CCg"/>
+                                                        <constraint firstAttribute="trailing" secondItem="3Ku-SN-CtU" secondAttribute="trailing" id="ifD-ZJ-d7u"/>
+                                                        <constraint firstItem="3Ku-SN-CtU" firstAttribute="leading" secondItem="qfS-sh-Tnk" secondAttribute="leading" id="t0v-vq-8wq"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="addPhotoBtn" destination="3Ku-SN-CtU" id="ML2-Cj-X2d"/>
+                                                    </connections>
+                                                </collectionReusableView>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="suT-Yn-QpU" id="Y9Z-63-xZ4"/>
+                                                    <outlet property="delegate" destination="suT-Yn-QpU" id="Wfo-Do-MuN"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Eva-nK-Z6E" firstAttribute="leading" secondItem="gEt-Bs-JEU" secondAttribute="leading" constant="16" id="hVN-9n-i5p"/>
+                                            <constraint firstItem="Eva-nK-Z6E" firstAttribute="top" secondItem="gEt-Bs-JEU" secondAttribute="top" constant="16" id="p71-rY-6H4"/>
+                                            <constraint firstAttribute="trailing" secondItem="Eva-nK-Z6E" secondAttribute="trailing" constant="16" id="tHo-P3-R2b"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gEt-Bs-JEU" firstAttribute="width" secondItem="LJL-O6-EbL" secondAttribute="width" id="HrF-K7-Uqh"/>
+                                    <constraint firstItem="gEt-Bs-JEU" firstAttribute="leading" secondItem="Iki-u5-B13" secondAttribute="leading" id="NdR-g0-P6s"/>
+                                    <constraint firstItem="gEt-Bs-JEU" firstAttribute="trailing" secondItem="Iki-u5-B13" secondAttribute="trailing" id="V50-z4-KZy"/>
+                                    <constraint firstItem="gEt-Bs-JEU" firstAttribute="bottom" secondItem="Iki-u5-B13" secondAttribute="bottom" id="bUM-x3-CYM"/>
+                                    <constraint firstItem="gEt-Bs-JEU" firstAttribute="top" secondItem="Iki-u5-B13" secondAttribute="top" id="lgG-Tv-gWR"/>
+                                    <constraint firstItem="gEt-Bs-JEU" firstAttribute="height" secondItem="LJL-O6-EbL" secondAttribute="height" id="qLe-7S-hsX"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Iki-u5-B13"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="LJL-O6-EbL"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Upa-5c-I88"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qwf-tc-hna" firstAttribute="leading" secondItem="Upa-5c-I88" secondAttribute="leading" id="N59-eK-MNr"/>
+                            <constraint firstItem="qwf-tc-hna" firstAttribute="top" secondItem="Upa-5c-I88" secondAttribute="top" id="cPw-m8-6MN"/>
+                            <constraint firstItem="Upa-5c-I88" firstAttribute="trailing" secondItem="qwf-tc-hna" secondAttribute="trailing" id="l5Q-0i-gLK"/>
+                            <constraint firstItem="Upa-5c-I88" firstAttribute="bottom" secondItem="qwf-tc-hna" secondAttribute="bottom" id="pmR-Bf-x6s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="photoCollectionview" destination="Eva-nK-Z6E" id="Us9-JY-d2a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hq7-1c-5cC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562.3188405797102" y="930.80357142857133"/>
         </scene>
         <!--Message-->
         <scene sceneID="oiG-SC-4eO">
@@ -41,7 +164,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0X0-hN-nIg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1841" y="1782"/>
+            <point key="canvasLocation" x="-1217" y="931"/>
         </scene>
         <!--Me-->
         <scene sceneID="76y-wc-q41">
@@ -57,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPD-y6-6Me" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186" y="2269"/>
+            <point key="canvasLocation" x="-1839" y="932"/>
         </scene>
         <!--Shop-->
         <scene sceneID="cZ6-uV-U9S">
@@ -73,7 +196,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uvE-ex-8gm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2038" y="44"/>
+            <point key="canvasLocation" x="-600" y="931"/>
         </scene>
         <!--DiscoveryVC-->
         <scene sceneID="gvh-eM-ZWI">
@@ -122,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDd-Ae-1mL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1091.304347826087" y="-1187.2767857142856"/>
+            <point key="canvasLocation" x="1528" y="224"/>
         </scene>
         <!--Near ByVC-->
         <scene sceneID="8xs-t0-ioC">
@@ -137,7 +260,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5fS-QZ-2Ch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1782" y="-1202"/>
+            <point key="canvasLocation" x="-1217" y="224"/>
         </scene>
         <!--FollowVC-->
         <scene sceneID="sNy-26-JIC">
@@ -152,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xtm-9C-vVK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1781" y="-549"/>
+            <point key="canvasLocation" x="-600" y="224"/>
         </scene>
         <!--WaterfallVC-->
         <scene sceneID="485-OK-hzi">
@@ -196,7 +319,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbA-tF-PNu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2680" y="-624"/>
+            <point key="canvasLocation" x="2161" y="224"/>
         </scene>
         <!--Home-->
         <scene sceneID="LNh-0e-5Yo">
@@ -246,7 +369,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RIM-OG-5uV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073.913043478261" y="-532.36607142857144"/>
+            <point key="canvasLocation" x="906" y="224"/>
         </scene>
         <!--Tab BarC-->
         <scene sceneID="bv9-9q-6qj">
@@ -272,6 +395,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="2" width="1080" height="1440"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="message.fill" catalog="system" width="128" height="113"/>
