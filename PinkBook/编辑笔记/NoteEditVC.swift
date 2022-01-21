@@ -5,7 +5,6 @@
 //  Created by 李胜 on 2022/1/20.
 //
 
-import AVKit
 import UIKit
 
 class NoteEditVC: UIViewController {
@@ -17,8 +16,12 @@ class NoteEditVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 开启拖放交互
+        photoCollectionview.dragInteractionEnabled = true
     }
 
+    /// 添加照片
     @objc private func addPhoto() {
         if photoCount < kMaxPhotoCount {
             var config = YPImagePickerConfiguration()
@@ -88,41 +91,5 @@ extension NoteEditVC: UICollectionViewDataSource, UICollectionViewDelegate {
             fatalError("collectionView的footer出问题了")
             // 或 return UICollectionReusableView()
         }
-    }
-
-    /// 预览照片/视频+删除照片
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if isVideo {
-            let playerVC = AVPlayerViewController()
-            playerVC.player = AVPlayer(url: videoURL!)
-            present(playerVC, animated: true) {
-                playerVC.player?.play()
-            }
-        } else {
-            // 1. create SKPhoto Array from UIImage
-            var images: [SKPhoto] = []
-
-            for photo in photos {
-                images.append(SKPhoto.photoWithImage(photo))
-            }
-
-            // 2. create PhotoBrowser Instance, and present from your viewController.
-            let browser = SKPhotoBrowser(photos: images, initialPageIndex: indexPath.item)
-            browser.delegate = self
-            SKPhotoBrowserOptions.displayAction = false
-            SKPhotoBrowserOptions.displayDeleteButton = true
-            present(browser, animated: true)
-        }
-    }
-}
-
-// MARK: - SKPhotoBrowserDelegate
-
-extension NoteEditVC: SKPhotoBrowserDelegate {
-    /// 删除照片
-    func removePhoto(_ browser: SKPhotoBrowser, index: Int, reload: @escaping (() -> Void)) {
-        photos.remove(at: index)
-        photoCollectionview.reloadData()
-        reload()
     }
 }

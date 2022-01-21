@@ -110,6 +110,8 @@
                                                 <connections>
                                                     <outlet property="dataSource" destination="suT-Yn-QpU" id="Y9Z-63-xZ4"/>
                                                     <outlet property="delegate" destination="suT-Yn-QpU" id="Wfo-Do-MuN"/>
+                                                    <outlet property="dragDelegate" destination="suT-Yn-QpU" id="d48-mF-B3h"/>
+                                                    <outlet property="dropDelegate" destination="suT-Yn-QpU" id="VKJ-Eq-MSJ"/>
                                                 </connections>
                                             </collectionView>
                                         </subviews>

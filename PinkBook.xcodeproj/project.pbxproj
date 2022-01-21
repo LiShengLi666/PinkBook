@@ -16,6 +16,8 @@
 		1A60D84D279671EB00ADFAD9 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60D84B279671EB00ADFAD9 /* WaterfallVC.swift */; };
 		1A60D8512796723C00ADFAD9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60D84F2796723C00ADFAD9 /* Extensions.swift */; };
 		1A60D8522796723C00ADFAD9 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60D8502796723C00ADFAD9 /* Protocols.swift */; };
+		1A8C4A19279A54E000014AC0 /* NoteEditVC-previewPhotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C4A18279A54E000014AC0 /* NoteEditVC-previewPhotos.swift */; };
+		1A8C4A1B279A55D800014AC0 /* NoteEditVC-drag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8C4A1A279A55D800014AC0 /* NoteEditVC-drag.swift */; };
 		1A951E032785F1CC00942B62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A951E022785F1CC00942B62 /* AppDelegate.swift */; };
 		1A951E052785F1CC00942B62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A951E042785F1CC00942B62 /* SceneDelegate.swift */; };
 		1A951E0A2785F1CC00942B62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A951E082785F1CC00942B62 /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 		1A60D84B279671EB00ADFAD9 /* WaterfallVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
 		1A60D84F2796723C00ADFAD9 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1A60D8502796723C00ADFAD9 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		1A8C4A18279A54E000014AC0 /* NoteEditVC-previewPhotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-previewPhotos.swift"; sourceTree = "<group>"; };
+		1A8C4A1A279A55D800014AC0 /* NoteEditVC-drag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-drag.swift"; sourceTree = "<group>"; };
 		1A951DFF2785F1CC00942B62 /* PinkBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinkBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A951E022785F1CC00942B62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A951E042785F1CC00942B62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				1AEE29B02798FED800CCBDD5 /* NoteEditVC.swift */,
+				1A8C4A18279A54E000014AC0 /* NoteEditVC-previewPhotos.swift */,
+				1A8C4A1A279A55D800014AC0 /* NoteEditVC-drag.swift */,
 				1AEE29B3279910B300CCBDD5 /* PhotoCell.swift */,
 				1AEE29B52799436000CCBDD5 /* PhotoFooter.swift */,
 			);
@@ -313,12 +319,14 @@
 				1A60D8522796723C00ADFAD9 /* Protocols.swift in Sources */,
 				1A60D84D279671EB00ADFAD9 /* WaterfallVC.swift in Sources */,
 				1A60D84C279671EB00ADFAD9 /* WaterfallCell.swift in Sources */,
+				1A8C4A1B279A55D800014AC0 /* NoteEditVC-drag.swift in Sources */,
 				1A951E032785F1CC00942B62 /* AppDelegate.swift in Sources */,
 				1AA7637D279704D500D44521 /* TabBarC.swift in Sources */,
 				1A0C18FA279442E700728CA3 /* Constants.swift in Sources */,
 				1A951E052785F1CC00942B62 /* SceneDelegate.swift in Sources */,
 				1A60D8512796723C00ADFAD9 /* Extensions.swift in Sources */,
 				1A0C18F8279442D300728CA3 /* FollowVC.swift in Sources */,
+				1A8C4A19279A54E000014AC0 /* NoteEditVC-previewPhotos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
