@@ -210,6 +210,15 @@ extension NoteEditVC: UITextFieldDelegate {
     }
 }
 
+// MARK: - UITextViewDelegate
+extension NoteEditVC: UITextViewDelegate{
+    func textViewDidChange(_ textView: UITextView) {
+        guard textView.markedTextRange == nil else { return }
+        showTextHUD("输入中")
+//        textViewIAView.currentTextCount = textView.text.count
+    }
+}
+
 //// MARK: - 因系统自带拼音键盘把拼音也当做字符,故需在输入完之后判断,故全部移到TFEditChanged方法中进行处理
 //
 // extension NoteEditVC: UITextFieldDelegate{
